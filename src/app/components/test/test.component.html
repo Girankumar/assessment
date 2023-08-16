@@ -1,0 +1,29 @@
+<!-- creating employee details using table -->
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+      {{title}}
+    </div>
+    <div class='panel-body'>
+      <div class='table-responsive'>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>employeename</th>
+              <th>email</th>
+              <th>password</th>
+              <th>id</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of movies;">
+              <td>{{employee.employeename}}</td>
+              <td>{{employee.email}}</td>
+              <td>{{employee.password}}</td>
+              <td>{{employee.id}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

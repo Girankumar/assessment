@@ -1,0 +1,8 @@
+<!-- reactive forms module [form control name] -->
+<form [formGroup]="submitform">
+    <input type="text" formControlName="FirstName">
+    <input type="text" formControlName="LastName">
+    <input type="text" formControlName="Occupation">
+    <input type="text" formControlName="PhoneNo">
+  </form>
+  {{submitform.value | json}}
